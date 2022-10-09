@@ -1,0 +1,44 @@
+.our-process-wrapper{
+  margin-top:5%;
+  text-align: center;
+}
+.sub-heading {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .our-process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .our-process-steps:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    top: 42%;
+    left: 10%;
+    background-color: var(--primary);
+  }
+  .our-process-steps .our-process-step {
+    position: relative;
+    z-index: 3;
+  }
+  .our-process-steps .our-process-step .icon {
+    width: 108px;
+    height: 108px;
+    border-radius: 108px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+  }
+  .our-process-steps .our-process-step .icon img {
+    width: 50px;
+  }
+  
+  

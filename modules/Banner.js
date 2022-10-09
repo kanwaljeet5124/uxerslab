@@ -16,7 +16,7 @@ function Banner(props){
     }
     return(
         <Fragment>
-            <div className={`d-flex d-align-center ${styles['UX-Banner-wrapper']}`}>
+            <div className={`d-flex d-flex-column d-justify-center d-align-center p-relative ${styles['UX-Banner-wrapper']}`}>
                 <div className={`container`}>
                     <div className="d-flex d-align-center d-justify-center">
                         <div className='col-12 d-flex d-align-center d-justify-center d-flex-column'>
@@ -48,12 +48,12 @@ function Banner(props){
                                 <a className='btn btn-primary btn-default-width mr-3' href="#">Explore</a>
                                 <a className='btn btn-secondary btn-default-width' href="#">Start Project</a>
                             </div>
-                            <div className={styles['banner-mouse']}>
-                                <i className="fas fa-mouse"></i>
-                            </div>
                         </div>
                     </div>
                     
+                </div>
+                <div className={`d-flex d-justify-center ${styles["banner__mouse"]}`}>
+                    <i className="fas fa-mouse"></i>
                 </div>
             </div>
         </Fragment>

@@ -1,0 +1,189 @@
+.card-bg{
+
+  padding: 0px;
+  position: relative;
+}
+
+.card-bg::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 7px;
+  top: 0;
+  left: 0px;
+  z-index: 2;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  background: var(--gradient);
+  transition: 0.5s all ease;
+
+}
+.card-bg::after{
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 7px;
+  left: 0px;
+  top: 0;
+  z-index: 5;
+  background: var(--gradient);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: 0.5s all ease;
+}
+.UX-card::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 7px;
+  bottom: 0;
+  right: 0px;
+  z-index: 2;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  background: var(--gradient);
+  transition: 0.5s all ease;
+}
+.UX-card::after{
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 7px;
+  right: 0px;
+  bottom: 0;
+  z-index: 5;
+  background: var(--gradient);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: 0.5s all ease;  
+}
+
+.card-bg:hover{
+  border-color: transparent;
+  border-top-left-radius: 10px;
+  transform: scale(1);
+}
+.card-bg:hover::before{
+  width: 100%;
+}
+.card-bg:hover::after{
+  height: 100%;
+}
+.card-bg:hover .UX-card::before{
+  width: 100%;
+}
+.card-bg:hover .UX-card::after{
+  height: 100%;
+}
+
+.UX-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 3rem;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 10px;
+
+}
+
+.card-hover-image {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  bottom: -40%;
+  left: 50px;
+  transform: rotate(147deg);
+  transition: 1s all ease-in-out;
+}
+.card-hover-image-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  top: -35%;
+  left: -28%;
+  opacity: 0;
+  transform: rotate(316deg);
+  transition: all 1s ease-in-out;
+}
+.UX-card:hover {
+  cursor: pointer;
+  background-color: var(--smoke-white);
+  transition: 0.2s all ease-in-out;
+}
+.UX-card:hover .card-hover-image-top {
+  display: flex;
+  top: -34%;
+  left: -28%;
+  width: 100%;
+  opacity: 0.8;
+}
+.ux-card-button {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.ux-card-button:hover {
+  border-color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.2s all ease-in-out;
+}
+.UX-card:hover .card-hover-image {
+  opacity: 0.8;
+}
+.ux-card-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 244);
+}
+.UX-card:hover .ux-card-icon {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.UX-card:hover .ux-card-title {
+  font-weight: 700;
+  color: var(--black);
+}
+.UX-card:hover .ux-card-description {
+  font-weight: 500;
+  color: var(--black);
+}
+.ux-card-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  font-weight: bold;
+}
+.ux-card-title:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40%;
+  top: 45px;
+  background: var(--gradient);
+  bottom: -60%;
+  left: 30%;
+}
+.ux-card-description {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}

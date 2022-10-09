@@ -1,0 +1,20 @@
+.insights-floating-card {
+  width: 80%;
+  left: 10%;
+  top: 50%;
+}
+.insights-floating-card-content {
+  display: flex;
+}
+.insights-floating-card-content-title {
+  width: 50%;
+}
+.insight-header::before {
+  content: "BLOGS";
+  position: absolute;
+  font-size: 15rem;
+  color: rgba(0, 0, 0, 0.025);
+  font-weight: 800;
+  top: -20%;
+  left: -55%;
+}

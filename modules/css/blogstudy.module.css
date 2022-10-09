@@ -1,0 +1,20 @@
+ /*  Blog Study Card start*/
+ .ux-case-study-card {
+    width: 100%;
+    position: relative;
+  }
+  .ux-case-study-card-img {
+    width: 100%;
+  }
+  .ux-case-study-card-title {
+    position: absolute;
+    width: 85%;
+    left: 15%;
+    bottom: -13%;
+    cursor: pointer;
+  }
+  .ux-case-study-card-title:hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  

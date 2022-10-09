@@ -172,14 +172,16 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   
-  .banner-mouse {
+  .banner__mouse {
     display: flex;
     align-items: flex-end;
     justify-content: end;
-    flex: 1 1;
+    position: absolute;
+    z-index: 9;
+    bottom: 0px;
   }
   
-  .banner-mouse i {
+  .banner__mouse i {
     font-size: 2.5rem;
     cursor: pointer;
     margin-bottom: 3rem;

@@ -401,6 +401,9 @@ html,body{
 .bg-smoke{
   background-color: var(--smoke-white);
 }
+.bg-gradient{
+  background: var(--gradient);
+}
 /* End Background Colors */
 
 /* Opacity Starts */
@@ -659,6 +662,9 @@ html,body{
 .font-19{
   font-size: 19px;
 }
+.font-14{
+  font-size: 14px;
+}
 .font-16{
   font-size: 16px;
 }
@@ -684,6 +690,9 @@ p{
 a{
   font-family: 'Plus Jakarta Sans', sans-serif;
   text-decoration: none;
+}
+.underline{
+  text-decoration: underline;
 }
 span{
   font-size: inherit;
