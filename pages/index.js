@@ -14,6 +14,7 @@ export default function Home() {
       <BlogInsights></BlogInsights>
       <Technologies heading="true" bottom-section="true"></Technologies>
       <ContactUs></ContactUs> 
+      
     </Fragment>
   )
 }
